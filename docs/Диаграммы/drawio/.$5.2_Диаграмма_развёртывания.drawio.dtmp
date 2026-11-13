@@ -1,0 +1,103 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Развёртывание" id="d1">
+    <mxGraphModel dx="2593" dy="1591" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;strokeWidth=1.2;" value="«device»&lt;br&gt;&lt;b&gt;Устройство пользователя&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;ПК или смартфон, экран от 360 px&lt;/span&gt;" vertex="1">
+          <mxGeometry height="260" width="270" x="20" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;strokeWidth=1.2;" value="«executionEnvironment»&lt;br&gt;&lt;b&gt;Веб-браузер&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Chrome, Яндекс Браузер, Firefox&lt;/span&gt;" vertex="1">
+          <mxGeometry height="160" width="220" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;client-spa&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;JS, HTML, CSS (загружается с сервера)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="60" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;strokeWidth=1.2;" value="«device»&lt;br&gt;&lt;b&gt;Сервер приложения&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Linux, не менее 2 ядер и 2 ГБ ОЗУ, территория РФ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="640" width="640" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;strokeWidth=1.2;" value="«executionEnvironment»&lt;br&gt;&lt;b&gt;Docker Engine&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;docker compose, внутренняя сеть&lt;/span&gt;" vertex="1">
+          <mxGeometry height="440" width="600" x="370" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fontSize=12;strokeWidth=1.2;" value="«container»&lt;br&gt;&lt;b&gt;client&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;nginx: TLS, раздача SPA, прокси /api&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="560" x="390" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;nginx.conf&lt;/b&gt;" vertex="1">
+          <mxGeometry height="56" width="160" x="400" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;TLS-сертификат&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;TLS 1.2+&lt;/span&gt;" vertex="1">
+          <mxGeometry height="56" width="160" x="575" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;client-spa&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;сборка React&lt;/span&gt;" vertex="1">
+          <mxGeometry height="56" width="180" x="750" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fontSize=12;strokeWidth=1.2;" value="«container»&lt;br&gt;&lt;b&gt;server&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Node.js LTS&lt;/span&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="390" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;server-app&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;REST API, бизнес-логика, уведомления, планировщик&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="405" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fontSize=12;strokeWidth=1.2;" value="«container»&lt;br&gt;&lt;b&gt;db&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;PostgreSQL 15+&lt;/span&gt;" vertex="1">
+          <mxGeometry height="200" width="260" x="690" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;postgres&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;образ СУБД&lt;/span&gt;" vertex="1">
+          <mxGeometry height="56" width="110" x="705" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;db-data&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;том с данными&lt;/span&gt;" vertex="1">
+          <mxGeometry height="56" width="110" x="825" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=12;fontSize=11;align=center;verticalAlign=middle;strokeWidth=1;" value="&lt;span style=&quot;font-size:10px&quot;&gt;«artifact»&lt;/span&gt;&lt;br&gt;&lt;b&gt;backup-db&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;pg_dump по расписанию, ежесуточно&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="560" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;align=left;verticalAlign=top;spacingLeft=10;spacingTop=4;fontSize=12;strokeWidth=1.2;" value="«device»&lt;br&gt;&lt;b&gt;Хранилище резервных копий&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:10px&quot;&gt;отдельно от сервера&lt;/span&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="1040" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="c2" style="endArrow=open;startArrow=open;endSize=8;startSize=8;html=1;fontSize=10;exitX=1.0000;exitY=0.1250;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" connectable="0" parent="c17" style="edgeLabel;html=1;resizable=0;align=center;verticalAlign=middle;fontSize=10;labelBackgroundColor=#FFFFFF;" value="HTTPS :443" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" edge="1" parent="1" source="c6" style="endArrow=open;endSize=8;html=1;rounded=0;fontSize=10;exitX=0.2321;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;" target="c10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" connectable="0" parent="c19" style="edgeLabel;html=1;resizable=0;align=center;verticalAlign=middle;fontSize=10;labelBackgroundColor=#FFFFFF;" value="HTTP :3000" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" edge="1" parent="1" source="c10" style="endArrow=open;endSize=8;html=1;rounded=0;fontSize=10;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" connectable="0" parent="c21" style="edgeLabel;html=1;resizable=0;align=center;verticalAlign=middle;fontSize=10;labelBackgroundColor=#FFFFFF;" value="TCP :5432" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" edge="1" parent="1" source="c15" style="endArrow=open;endSize=8;html=1;rounded=0;fontSize=10;dashed=1;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5000;entryDx=0;entryDy=0;" target="c16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" connectable="0" parent="c23" style="edgeLabel;html=1;resizable=0;align=center;verticalAlign=middle;fontSize=10;labelBackgroundColor=#FFFFFF;" value="копия БД" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" edge="1" parent="1" source="c15" style="endArrow=open;endSize=8;html=1;rounded=0;fontSize=10;dashed=1;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=1.0000;entryDx=0;entryDy=0;" target="c12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="545" />
+              <mxPoint x="820" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" connectable="0" parent="c25" style="edgeLabel;html=1;resizable=0;align=center;verticalAlign=middle;fontSize=10;labelBackgroundColor=#FFFFFF;" value="pg_dump" vertex="1">
+          <mxGeometry relative="1" x="0.6" as="geometry">
+            <mxPoint x="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
